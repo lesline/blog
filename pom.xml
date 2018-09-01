@@ -16,12 +16,9 @@
         <guava.version>18.0</guava.version>
         <commons-lang-version>2.6</commons-lang-version>
         <junit-version>4.11</junit-version>
-
         <jackson-version>1.9.12</jackson-version>
         <slf4j-version>1.7.5</slf4j-version>
         <log4j-version>1.2.17</log4j-version>
-
-        <springframework.version>3.2.4.RELEASE</springframework.version>
 
     </properties>
     <dependencies>
@@ -72,7 +69,6 @@
             <version>${slf4j-version}</version>
         </dependency>
 
-
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
@@ -89,12 +85,6 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.0.1</version>
             <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>commons-lang</groupId>
