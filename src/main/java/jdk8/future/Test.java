@@ -7,11 +7,12 @@ import java.util.concurrent.*;
  * @create 2018/8/29
  */
 public class Test {
-    public static void main(String[] args) {
 
-    }
 
-    public static void test3() {
+    /**
+     * java7实现
+     */
+    public static void java7test() {
         ExecutorService executor = Executors.newCachedThreadPool();
         Future<Integer> future = executor.submit(new Callable<Integer>() {
             @Override

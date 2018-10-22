@@ -16,10 +16,10 @@ public class MonoHttp3 {
         System.out.println("----------------1--------------------");
 
         Mono<String> item1Mono = Mono.fromSupplier(
-                () ->  MonoHttp.getItem(param)
+                () ->  MonoHttp3.getItem(param)
         );
         Mono<String> item2Mono = Mono.fromSupplier(
-                () ->  MonoHttp.getItem(param)
+                () ->  MonoHttp3.getItem(param)
         );
 
         item1Mono.subscribe(System.out::println);

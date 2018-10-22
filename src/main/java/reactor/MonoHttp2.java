@@ -16,7 +16,7 @@ public class MonoHttp2 {
         System.out.println("----------------1--------------------");
 
 //        Mono<String> customerPhoneMono = Mono.fromSupplier(
-//                () ->  MonoHttp.getItem(param)
+//                () ->  ColdMonoHttp.getNameByPhone(param)
 //        );
 //
         Mono<String> item1Mono = Mono.fromFuture(

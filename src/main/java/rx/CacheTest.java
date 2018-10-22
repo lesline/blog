@@ -15,7 +15,6 @@ public class CacheTest {
         work.subscribe(System.out::println);
         work.map(i -> i * 2).subscribe(System.out::println);
 
-
         Thread.sleep(1000);
     }
 }
