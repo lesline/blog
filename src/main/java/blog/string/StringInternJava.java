@@ -17,15 +17,14 @@ public class StringInternJava {
     public void test() {
         String s11 = "a" + "b"; //存在这个前后值不一样
         System.out.println(s11 == "ab");//true
+
+
     }
 
-    /**
-     *
-     */
     @Test
     public void testA() {
         String s1 = new String("a") + new String("b");
-        //String s11 = "a" + "b"; //存在这个前后值不一样
+        String s11 = "ab"; //存在这个前后值不一样
         /**
          是否存在 String s11 = "a" + "b";
          存在  不存在
@@ -43,8 +42,8 @@ public class StringInternJava {
         System.out.println(s2 == "java");//false
     }
 
-    public static void testB() {
-
+    @Test
+    public void testB() {
         String s2 = new String("java");
         String s3 = new StringBuilder().append("ja").append("va").toString();
 
@@ -52,20 +51,22 @@ public class StringInternJava {
         System.out.println(s2.intern() == s3);//false
     }
 
-
-    public static void test1() {
+    @Test
+    public void test1() {
         String s1 = new StringBuilder().append("aa").append("bb").toString();
         System.out.println(s1.intern() == s1); //true
         String s2 = new StringBuilder().append("ja").append("va").toString();
         System.out.println(s2.intern() == s2);//false
     }
 
-    public static void test3() {
+    @Test
+    public void test3() {
         String s1 = new String("aa") + new String("bb");
         System.out.println(s1.intern() == s1); //true
     }
 
-    public static void test2() {
+    @Test
+    public void test2() {
         String s1 = new String("aabb");
         System.out.println(s1.intern() == s1);//false
         String s2 = new StringBuilder().append("ja").append("va").toString();
