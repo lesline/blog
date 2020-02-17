@@ -1,10 +1,8 @@
-package stream;
+package jdk8.stream;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Stream;
 
@@ -12,14 +10,20 @@ import java.util.stream.Stream;
  * @author zhangshaolin
  * @create 2018/7/15
  */
-public class BackTest {
+public class StreamParallelExceptionTest {
+
+    /**
+     * 判断异步会不会终止主线程
+     *
+     * @throws InterruptedException
+     */
     @Test
     public void test() throws InterruptedException {
-        Set a=new HashSet();
+        Set a = new HashSet();
         Stream.iterate(1, n -> n + 1).limit(12).parallel().forEach(v -> {
             a.add(v);
 
-            if(v==91){
+            if (v == 91) {
                 throw new RuntimeException("ddd");
             }
             System.out.println(v);
@@ -28,7 +32,7 @@ public class BackTest {
         System.out.println("------------");
         System.out.println(a.size());
 
-        Thread.sleep(1000*5);
+        Thread.sleep(1000 * 5);
     }
 
     @Test

@@ -1,4 +1,4 @@
-package leecode.dynamic.max;
+package algorithm.dynamic.max;
 
 public class BetterTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package leecode;
+package algorithm.common;
 
 class Solution {
     public static int reverse(int x) {

@@ -1,4 +1,4 @@
-package leecode.dynamic.bag;
+package algorithm.dynamic.bag;
 
 /**
  * Created by zhangshaolin on 2017/12/5.

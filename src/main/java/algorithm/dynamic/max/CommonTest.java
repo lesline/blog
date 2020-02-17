@@ -1,4 +1,4 @@
-package leecode.dynamic.max;
+package algorithm.dynamic.max;
 
 /**
  * 取子数组的最大和

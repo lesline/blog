@@ -1,4 +1,4 @@
-package leecode.dynamic.bag;
+package algorithm.dynamic.bag;
 
 public class PackageItem {
 		public String name;

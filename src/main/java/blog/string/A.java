@@ -1,4 +1,4 @@
-package jvm;
+package blog.string;
 
 /**
  * @author zhangshaolin
