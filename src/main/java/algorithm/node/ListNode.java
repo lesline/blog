@@ -4,11 +4,11 @@ package algorithm.node;
  * @author zhangshaolin
  * @create 2020/2/17
  */
-public class Node {
+public class ListNode {
     public int value;
-    public Node next;
+    public ListNode next;
 
-    public Node(int data) {
+    public ListNode(int data) {
         this.value = data;
     }
 
@@ -17,7 +17,7 @@ public class Node {
     public String toString() {
 
         StringBuffer st = new StringBuffer();
-        Node tmp = this;
+        ListNode tmp = this;
         while (tmp != null) {
             st.append(tmp.value).append("->");
             tmp = tmp.next;
