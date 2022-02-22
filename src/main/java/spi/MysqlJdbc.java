@@ -1,4 +1,4 @@
-package domain.spi;
+package spi;
 
 public class MysqlJdbc implements Jdbc {
 

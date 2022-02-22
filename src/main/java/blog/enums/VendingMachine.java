@@ -1,8 +1,8 @@
-package enums;
+package blog.enums;
 
 import java.util.EnumMap;
 
-import static enums.Input.*;
+import static blog.enums.Input.*;
 
 public class VendingMachine {
     private static State state = State.RESTING;

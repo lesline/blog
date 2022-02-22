@@ -27,17 +27,15 @@ public class QuickOrder {
     public static void main(String[] args) {
 
         //int[] a={4,5,1,0,2,3};
-        int[]  a= {4, 2, 5, 1, 6, 3, 7};
-
+//        int[]  a= {4, 2, 5, 1, 6, 3, 7};
+        int[]  a= {5,1,1,2,0,0};
         System.out.println(Arrays.toString(a));
+        System.out.println("-------------------------");
         getStr(a,0,a.length-1);
+        System.out.println("========================");
         System.out.println(Arrays.toString(a));
 
     }
-
-    /*
-     *
-     */
     static void getStr(int[] a, int left, int right) {
         if(left >= right) return;
         int iLeft = left;
@@ -47,21 +45,18 @@ public class QuickOrder {
             /*
 			 * 高位从右向左移
 			 */
-            while (left < right && mid < a[right]) {
+            while (left < right && mid <= a[right]) {
                 right--;
             }
-            ;
             a[left] = a[right];
 			/*
 			 * 低位从左向右移
 			 */
-            while (left < right && mid > a[left]) {
+            while (left < right && mid >= a[left]) {
                 left++;
             }
-            ;
             a[right] = a[left];
         }
-        ;
         a[left] = mid;
         System.out.println(iLeft+":"+left+":"+iRihgt);
         System.out.println(Arrays.toString(a));

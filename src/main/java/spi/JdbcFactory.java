@@ -1,4 +1,4 @@
-package domain.spi;
+package spi;
 
 import java.util.ServiceLoader;
 

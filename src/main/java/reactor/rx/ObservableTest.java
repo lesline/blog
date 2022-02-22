@@ -1,4 +1,4 @@
-package rx;
+package reactor.rx;
 
 import io.reactivex.Observable;
 import io.reactivex.schedulers.Schedulers;

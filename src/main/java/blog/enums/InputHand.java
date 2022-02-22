@@ -1,9 +1,9 @@
-package enums;
+package blog.enums;
 
 import java.util.Arrays;
 
-import static enums.Input.DIME;
-import static enums.Input.NICKEL;
+import static blog.enums.Input.DIME;
+import static blog.enums.Input.NICKEL;
 
 
 public enum InputHand {

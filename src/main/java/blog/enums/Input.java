@@ -1,4 +1,4 @@
-package enums;
+package blog.enums;
 
 import java.util.Random;
 
