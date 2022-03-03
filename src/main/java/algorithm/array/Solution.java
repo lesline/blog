@@ -19,6 +19,7 @@ class Solution {
                 ans += rightMax - height[right];
                 --right;
             }
+
         }
         return ans;
     }
