@@ -1,4 +1,4 @@
-package blog.disruptor;
+package blog.disruptor.demo1;
 
 import com.lmax.disruptor.EventHandler;
 /**

@@ -1,4 +1,4 @@
-package blog.disruptor;
+package blog.disruptor.demo1;
 
 public class LongEvent {
     private long value;

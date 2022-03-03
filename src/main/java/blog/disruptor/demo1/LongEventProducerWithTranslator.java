@@ -1,9 +1,9 @@
-package blog.disruptor;
+package blog.disruptor.demo1;
 
-import java.nio.ByteBuffer;
- 
 import com.lmax.disruptor.EventTranslatorOneArg;
 import com.lmax.disruptor.RingBuffer;
+
+import java.nio.ByteBuffer;
  
 /**
  * post-3.0 the preferred approach for publishing messages is 
