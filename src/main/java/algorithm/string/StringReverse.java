@@ -18,7 +18,7 @@ public class StringReverse {
 
         int left = -1;
         int right = -1;
-
+        //ddd
         for (int i = 0; i < sources.length; i++) {
             if (i == 0 || sources[i - 1] == ' ') {
                 left = i;
