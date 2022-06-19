@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-class Solution {
+class Dfs {
 
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
